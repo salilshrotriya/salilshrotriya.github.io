@@ -1,0 +1,105 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	background-color: white;
+}
+
+#containertop {
+  width: auto;
+  margin: 10px;
+  padding: 10px;
+
+
+}
+
+
+
+.logo {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  float: left;
+  height: 100px;
+}
+
+header {
+  height: 150px;
+  background: white;
+  padding-top: 8px;
+  padding-left: 10px;
+  border-bottom: 1px black solid;
+}
+
+header nav {
+	
+    float:right;
+ } 
+header nav ul li {
+  
+  display: inline-block;
+  margin: 0 0 0 20px;
+  font-size: 15px;
+  
+}
+
+header nav ul li a {
+  
+  color: black;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+
+.galleryitem {
+  color: black;
+  float: left;
+  font:10px/1.5 verdana,helvetica,sans-serif;
+  width:16%;
+  margin: 2% 2% 50px 2%;
+}
+
+.galleryitem h3 {
+  text-transform: uppercase;
+}
+
+.galleryitem img {
+  max-width: 100%;
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  border-radius: 2px;
+}
+
+@media only screen and (max-width:940px),
+only screen and (max-device-width:940px) {
+  .galleryitem {width: 21%;}
+}
+
+@media only screen and (max-width:720px),
+only screen and (max-device-width:720px) {
+  .galleryitem {width: 29.33%;}
+}
+
+@media only screen and (max-width:530px),
+only screen and (max-device-width:530px) {
+  .galleryitem {width: 46%;}
+}
+
+
+@media only screen and (max-width:320px),
+only screen and (max-device-width:320px) {
+  .galleryitem {width: 96%;}
+  .galleryitem img {width:96%;}
+  .galleryitem h3 {font-size: 18px;}
+  .galleryitem p,{font-size: 18px;}
+}
